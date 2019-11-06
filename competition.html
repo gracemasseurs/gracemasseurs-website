@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>ALTITUDE</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type = "text/css" href = "testStyle.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top ">
+  <a class="navbar-brand" href="index.html">ALTITUDE</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+  <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="experiences.html">EXPERIENCES</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="tipsandchecklist.html">TIPS & CHECKLIST</a>
+        </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="competition.html">COMPETITION</a>
+      </li>    
+    </ul>
+  </div>  
+</nav>
+ 
+  <div class = "carousel-container container-fluid imageBox">
+
+    <div id = "carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+      
+        
+  <!-- Indicators -->
+    <ul class="carousel-indicators">
+        <li data-target="#carouselExampleFade" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleFade" data-slide-to="1"></li>
+        <li data-target="#carouselExampleFade" data-slide-to="2"></li>
+        <li data-target="#carouselExampleFade" data-slide-to="3"></li>
+        <li data-target="#carouselExampleFade" data-slide-to="4"></li>
+        <li data-target="#carouselExampleFade" data-slide-to="5"></li>
+      </ul>
+  
+    <!-- The slideshow -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100 img-fluid" src="photos/bannerslide1.jpg" alt="First slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100 img-fluid" src="photos/bannerslide2.jpg" alt="Second slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100 img-fluid" src="photos/bannerslide3.jpg" alt="Third slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100 img-fluid" src="photos/bannerslide4.jpg" alt="Fourth slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100 img-fluid" src="photos/bannerslide5.jpg" alt="Fifth slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100 img-fluid" src="photos/bannerslide7.jpg" alt="Sixth slide">
+        </div>
+        
+      </div>
+    
+       <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  
+  </div> 
+
+<div class="alert alert-info alert-dismissible">
+  <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+  <strong>Info!</strong> This information will be kept confidential
+</div>
+
+<div class="container">
+  <br>
+  <h2>WIN A FREE OUTWARD BOUND COURSE</h2>
+  <br>
+  <p>It is so easy, simply fill in this form and you are in to win! Completely free and will take 1 minute.</p>
+  <p>You won't want to miss this opportunity.</p>
+  <form action="index.html" class="needs-validation" novalidate>
+    <div class="form-group">
+      <label for="name"><strong> Full Name:</strong></label>
+      <input type="text" class="form-control" id="name" placeholder="Enter your full name" name="name" required>
+      <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please fill out this field.</div>
+    </div>
+    <div class="form-group">
+        <label for="eml"><strong>Email:</strong></label>
+        <input type="email" class="form-control" id="eml" placeholder="Enter email" name="eml" required>
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Please input a correct email</div>
+      </div>
+
+      <h6>Have you participated in either of these outdoor education pursuits?</h6>
+            <select name="gender" class="custom-select mb-3">
+              <option value="female" >Spirit of Adventure</option>
+              <option value="male">Hillary Outdoor Education</option>
+              <option value="others">Neither</option>
+            </select>
+      
+      <hr>
+
+      <div class = "form-check-inline">
+        <label class = "form-check-label"> <strong> On a scale, how confident are you at swimming? </strong> &nbsp; </label>
+          <input type="range" class="custom-range" id="customRange" name="points1">
+          </div>
+
+      <hr>
+
+      <h6>Checkbox:</h6>
+
+      <div class= "form-group form-check" >
+          <label class= "form-check-label" >
+            <input class= "form-check-input" type= "checkbox" name= "remember" required > I am Not a robot.
+            <span class = "valid-feedback"> Valid. </span>
+            <span class= "invalid-feedback" > Check this checkbox to continue. </span>
+          </label>
+        </div>
+      
+    <h6>Confirm your age:</h6>
+
+    <div class= "form-group form-check" >
+      <label class= "form-check-label" >
+        <input class= "form-check-input" type= "checkbox" name= "remember" required > You are between 16-18 years old.
+        <span class= "valid-feedback" > Valid. </span>
+        <span class= "invalid-feedback" > Check this checkbox to continue. </span>
+      </label>
+    </div>
+
+    <br>
+
+    <button type= "submit" class= "btn btn-primary" > Submit </button>
+    <br>
+  </form>
+  <br>
+</div>
+
+<script>
+// Disable form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Get the forms we want to add validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+</script>
+<br>
+
+<!-- After submitted goes to a 'you have been entered into the competition!' -->
+
+<!-- font awesome icons -->
+<footer class="page-footer font-small blue ">
+
+  <a href="https://www.facebook.com/OutwardBoundNZ/" target="_blank" class="fa fa-facebook"></a>
+  <a href="https://www.instagram.com/outwardboundnz/?hl=en" target="_blank" class="fa fa-instagram"></a>
+  <a href="https://www.youtube.com/user/OutwardBoundTrustNZ" target="_blank" class="fa fa-youtube"></a>
+  <a href="#" class="fa fa-snapchat-ghost"></a>
+
+<br>
+
+  <h1 class="footerh1"> Copyright © Grace Masseurs | Developed by GM Designs </h1>
+
+</footer>
+</body>
+</html>
